@@ -1,0 +1,6 @@
+.idea/*
+PriceFollower/settings.py
+__pycache__/
+*.py[cod]
+*$py.class
+static/bower_components

@@ -1,0 +1,8 @@
+{
+  "name": "PriceFollower",
+  "version": "0.1.0",
+  "dependencies": {
+    "bootstrap": "3.3.7",
+    "font-awesome": "4.4.0"
+  }
+}

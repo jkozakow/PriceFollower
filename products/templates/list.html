@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="row">
+    {% if product_list %}
+        {% for product in product_list %}
+            <div class="col-md-3 col-sm-6 col-lg-3 thumbnail">
+                <img class="group list-group-image" src="http://placehold.it/400x250/000/fff" alt=""/>
+                <p><a href="/products/{{ product.id }}">{{ product.name }}</a></p>
+                <dd>Lowest price</dd>
+                <dt><p>{{ product.current_lowest_price }} $$ </p></dt>
+                <div class="col-xs-12 col-md-6">
+                    <a class="btn btn-success" href="{% url 'add-to-follow' product.pk %}">Add to follow list</a>
+                </div>
+            </div>
+        {% endfor %}
+    {% endif %}
+</div>
+{% endblock %}
